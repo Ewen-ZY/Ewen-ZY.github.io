@@ -96,17 +96,20 @@
 
 
 
-  <meta name="description" content="过去属于死神，未来属于自己。——雪莱">
+  <meta name="description" content="写在前面第五次安装arch了，除了第一次欲仙欲死还没有安装成功外，其他都安装成功了。然后发现四次安装都要手动进行个人配置，很无语。因此，整理一下并写一些小脚本，传送门。 安装Arch推荐windows下的工具rufus制作引导U盘。默认制作好引导U盘。 查看引导方式1[ -d /sys/firmware/efi/efivars ] &amp;amp;&amp;amp; echo UEFI || echo BIOS">
 <meta name="keywords" content="C++,Python,Linux,文">
-<meta property="og:type" content="website">
-<meta property="og:title" content="代码、文、运动">
-<meta property="og:url" content="https://ewen-zy.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arch+i3-gaps+lightdm+urxvt安装">
+<meta property="og:url" content="https://ewen-zy.github.io/uncategorized/f83052e5.html">
 <meta property="og:site_name" content="代码、文、运动">
-<meta property="og:description" content="过去属于死神，未来属于自己。——雪莱">
+<meta property="og:description" content="写在前面第五次安装arch了，除了第一次欲仙欲死还没有安装成功外，其他都安装成功了。然后发现四次安装都要手动进行个人配置，很无语。因此，整理一下并写一些小脚本，传送门。 安装Arch推荐windows下的工具rufus制作引导U盘。默认制作好引导U盘。 查看引导方式1[ -d /sys/firmware/efi/efivars ] &amp;amp;&amp;amp; echo UEFI || echo BIOS">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ewen-zy.github.io/uncategorized/Arch.assets/1557113401856.png">
+<meta property="og:updated_time" content="2019-05-13T07:26:52.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="代码、文、运动">
-<meta name="twitter:description" content="过去属于死神，未来属于自己。——雪莱">
+<meta name="twitter:title" content="Arch+i3-gaps+lightdm+urxvt安装">
+<meta name="twitter:description" content="写在前面第五次安装arch了，除了第一次欲仙欲死还没有安装成功外，其他都安装成功了。然后发现四次安装都要手动进行个人配置，很无语。因此，整理一下并写一些小脚本，传送门。 安装Arch推荐windows下的工具rufus制作引导U盘。默认制作好引导U盘。 查看引导方式1[ -d /sys/firmware/efi/efivars ] &amp;amp;&amp;amp; echo UEFI || echo BIOS">
+<meta name="twitter:image" content="https://ewen-zy.github.io/uncategorized/Arch.assets/1557113401856.png">
 
 
 
@@ -116,7 +119,7 @@
 
   
   
-  <link rel="canonical" href="https://ewen-zy.github.io/">
+  <link rel="canonical" href="https://ewen-zy.github.io/uncategorized/f83052e5">
 
 
 
@@ -126,7 +129,7 @@
   };
 </script>
 
-  <title>代码、文、运动</title>
+  <title>Arch+i3-gaps+lightdm+urxvt安装 | 代码、文、运动</title>
   
 
 
@@ -174,8 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,7 +219,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -279,164 +281,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ewen-zy.github.io/uncategorized/4a17b156.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赖伟文">
-      <meta itemprop="description" content="过去属于死神，未来属于自己。——雪莱">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="代码、文、运动">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/uncategorized/4a17b156.html" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-13 15:19:27 / Modified: 15:26:52" itemprop="dateCreated datePublished" datetime="2019-05-13T15:19:27+08:00">2019-05-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -468,10 +315,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/uncategorized/f83052e5.html" class="post-title-link" itemprop="url">Arch+i3-gaps+lightdm+urxvt安装</a>
+          <h1 class="post-title" itemprop="name headline">Arch+i3-gaps+lightdm+urxvt安装
+
               
             
           </h1>
@@ -535,9 +380,7 @@
       
 
       
-        
-          
-            <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>第五次安装arch了，除了第一次欲仙欲死还没有安装成功外，其他都安装成功了。然后发现四次安装都要手动进行个人配置，很无语。因此，整理一下并写一些小脚本，<a href>传送门</a>。</p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>第五次安装arch了，除了第一次欲仙欲死还没有安装成功外，其他都安装成功了。然后发现四次安装都要手动进行个人配置，很无语。因此，整理一下并写一些小脚本，<a href>传送门</a>。</p>
 <h2 id="安装Arch"><a href="#安装Arch" class="headerlink" title="安装Arch"></a>安装Arch</h2><p><em>推荐windows下的工具<a href="https://rufus.ie/" target="_blank" rel="noopener">rufus</a>制作引导U盘。</em>默认制作好引导U盘。</p>
 <h3 id="查看引导方式"><a href="#查看引导方式" class="headerlink" title="查看引导方式"></a>查看引导方式</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ -d /sys/firmware/efi/efivars ] &amp;&amp; echo UEFI || echo BIOS</span><br></pre></td></tr></table></figure>
 
@@ -646,8 +489,6 @@
 <li></li>
 </ol>
 
-          
-        
       
     </div>
 
@@ -670,12 +511,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/uncategorized/4a17b156.html" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -685,14 +542,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -712,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -766,6 +633,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Arch"><span class="nav-number">2.</span> <span class="nav-text">安装Arch</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查看引导方式"><span class="nav-number">2.1.</span> <span class="nav-text">查看引导方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#联网"><span class="nav-number">2.2.</span> <span class="nav-text">联网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新系统时间"><span class="nav-number">2.3.</span> <span class="nav-text">更新系统时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分区"><span class="nav-number">2.4.</span> <span class="nav-text">分区</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BIOS-MBR方式引导"><span class="nav-number">2.4.1.</span> <span class="nav-text">BIOS/MBR方式引导</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EFI-GPT方式引导"><span class="nav-number">2.4.2.</span> <span class="nav-text">EFI/GPT方式引导</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建根分区与home分区"><span class="nav-number">2.4.3.</span> <span class="nav-text">创建根分区与home分区</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挂载分区"><span class="nav-number">2.5.</span> <span class="nav-text">挂载分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择镜像源"><span class="nav-number">2.6.</span> <span class="nav-text">选择镜像源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装基本包"><span class="nav-number">2.7.</span> <span class="nav-text">安装基本包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成fstab"><span class="nav-number">2.8.</span> <span class="nav-text">生成fstab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入新安装的Arch系统"><span class="nav-number">2.9.</span> <span class="nav-text">进入新安装的Arch系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置时区"><span class="nav-number">2.10.</span> <span class="nav-text">设置时区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地化"><span class="nav-number">2.11.</span> <span class="nav-text">本地化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络"><span class="nav-number">2.12.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置root密码"><span class="nav-number">2.13.</span> <span class="nav-text">设置root密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Intel-ucode（非Intel-CPU可以跳过此步骤）"><span class="nav-number">2.14.</span> <span class="nav-text">安装Intel-ucode（非Intel CPU可以跳过此步骤）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Bootleader——grub2"><span class="nav-number">2.15.</span> <span class="nav-text">安装Bootleader——grub2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BIOS-MBR引导"><span class="nav-number">2.15.1.</span> <span class="nav-text">BIOS/MBR引导</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#EFI-GPT引导"><span class="nav-number">2.15.2.</span> <span class="nav-text">EFI/GPT引导</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启后续操作"><span class="nav-number">2.16.</span> <span class="nav-text">重启后续操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装i3-gaps"><span class="nav-number">3.</span> <span class="nav-text">安装i3-gaps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装lightdm"><span class="nav-number">4.</span> <span class="nav-text">安装lightdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装urxvt"><span class="nav-number">5.</span> <span class="nav-text">安装urxvt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fira-Code字体"><span class="nav-number">6.</span> <span class="nav-text">Fira Code字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -894,6 +778,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -909,6 +797,8 @@
 
   
 
+
+  
 
 
   

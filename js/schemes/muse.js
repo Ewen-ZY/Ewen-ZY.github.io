@@ -1,3 +1,3 @@
-// build time:Tue May 28 2019 21:35:38 GMT+0800 (China Standard Time)
+// build time:Wed May 29 2019 10:30:11 GMT+0800 (China Standard Time)
 $(document).ready(function(){function t(){var t=$("#footer").attr("position")?$(".container").height()+$("#footer").outerHeight(true):$(".container").height();if(t<window.innerHeight)$("#footer").css({position:"fixed",bottom:0,left:0,right:0}).attr("position","fixed");else $("#footer").removeAttr("style position")}t();$(window).on("resize scroll",t)});
 //rebuild by neat 
